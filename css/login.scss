@@ -1,8 +1,33 @@
 @charset 'utf-8';
 @import 'font';
 @import 'variables';
+@import 'mixin';
 
 body{
-  background-color: pink;
+  background-image: url('../images/pattern.png');
   font-family: 'RobotoRegular';
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.homeCapsule{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.newAccountBtn{
+  @include buttonStyle($orange);
+}
+
+.loginBtn{
+  @include buttonStyle($green);
+}
+
+.landingLogo{
+  margin: 20px 0 50px 0;
 }
