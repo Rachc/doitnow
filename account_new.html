@@ -11,20 +11,20 @@
   <title>Do it Now</title>
 </head>
 <body>
-  <div class="newAccountCapsule">
+  <div class="accountCapsule">
     <img src="images/marca_mini_app.png" alt="Do it now" class="landingLogo">
 
-    <div class="newAccountContainer">
-      <div class="newAccountBack">
+    <div class="accountContainer">
+      <div class="accountBack">
         <a href="index.html"><img src="images/seta.png" alt="Voltar"></a>
       </div>
       <img src="images/camera.png" alt="Adicionar Imagem">
       <p>Criar Conta</p>
-      <form action="list.html" method="post" name="createUser">
-        <input type="text" placeholder="Nome" id="newName">
-        <input type="email" placeholder="Endereço de e-mail" id="newEmail">
-        <input type="password" placeholder="Senha" id="newPassword">
-        <input type="submit" value="Criar Conta" class="newAccountBtn" onclick="createUser()">
+      <form action="list.html" method="post">
+        <input type="text" placeholder="Nome" id="newName" required>
+        <input type="email" placeholder="Endereço de e-mail" id="newEmail" required>
+        <input type="password" placeholder="Senha" id="newPassword" required>
+        <input type="submit" value="Criar Conta" class="newAccountBtn">
       </form>
     </div>
 

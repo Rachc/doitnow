@@ -22,18 +22,18 @@ a{
 }
 
 .newAccountBtn{
-  @include buttonStyle($orange);
+  @include buttonStyle($orange, #fff);
 }
 
 .loginBtn{
-  @include buttonStyle($green);
+  @include buttonStyle($green, $brown);
 }
 
 .landingLogo{
   margin: 35px 0 50px 0;
 }
 
-.newAccountCapsule{
+.accountCapsule{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +44,7 @@ a{
   }
 }
 
-.newAccountContainer{
+.accountContainer{
   background-color: $yellow;
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@ a{
   box-shadow: 0px 2px 5px #686868;
 
   p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 5px 0 30px;
     color: $brown;
   }
@@ -87,10 +87,14 @@ a{
     input[type="submit"]{
       margin-top: 30px;
     }
+
+    p{
+      font-size: 0.9rem;
+    }
   }
 }
 
-.newAccountBack{
+.accountBack{
   display: flex;
   justify-content: flex-start;
   width: 100%;

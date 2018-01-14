@@ -27,7 +27,8 @@ a {
   width: 250px;
   margin-top: 3px;
   color: #fff;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-transform: capitalize; }
 
 .loginBtn {
   background-color: #d3ce3d;
@@ -37,21 +38,22 @@ a {
   border: none;
   width: 250px;
   margin-top: 3px;
-  color: #fff;
-  font-size: 1.2rem; }
+  color: #564337;
+  font-size: 1.2rem;
+  text-transform: capitalize; }
 
 .landingLogo {
   margin: 35px 0 50px 0; }
 
-.newAccountCapsule {
+.accountCapsule {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .newAccountCapsule .landingLogo {
+  .accountCapsule .landingLogo {
     max-width: 300px;
     margin: 35px 0 20px 0; }
 
-.newAccountContainer {
+.accountContainer {
   background-color: #faf4c2;
   display: flex;
   flex-direction: column;
@@ -62,38 +64,40 @@ a {
   box-sizing: border-box;
   border-radius: 5px;
   box-shadow: 0px 2px 5px #686868; }
-  .newAccountContainer p {
-    font-size: 1.2rem;
+  .accountContainer p {
+    font-size: 1.3rem;
     margin: 5px 0 30px;
     color: #564337; }
-  .newAccountContainer form {
+  .accountContainer form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 60%; }
-    .newAccountContainer form input[type="text"] {
+    .accountContainer form input[type="text"] {
       border: 1px solid #9c9c9c;
       padding: 10px;
       color: #564337;
       width: 100%;
       border-radius: 5px 5px 0 0; }
-    .newAccountContainer form input[type="email"] {
+    .accountContainer form input[type="email"] {
       border: 1px solid #9c9c9c;
       padding: 10px;
       color: #564337;
       width: 100%;
       border-top: none;
       border-bottom: none; }
-    .newAccountContainer form input[type="password"] {
+    .accountContainer form input[type="password"] {
       border: 1px solid #9c9c9c;
       padding: 10px;
       color: #564337;
       width: 100%;
       border-radius: 0 0 5px 5px; }
-    .newAccountContainer form input[type="submit"] {
+    .accountContainer form input[type="submit"] {
       margin-top: 30px; }
+    .accountContainer form p {
+      font-size: 0.9rem; }
 
-.newAccountBack {
+.accountBack {
   display: flex;
   justify-content: flex-start;
   width: 100%;
