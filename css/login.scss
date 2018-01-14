@@ -29,5 +29,15 @@ a{
 }
 
 .landingLogo{
-  margin: 20px 0 50px 0;
+  margin: 35px 0 50px 0;
+}
+
+@media screen and (max-width: 400px){
+  .homeCapsule{
+    margin-top: 20px;
+
+    img{
+      width: 80%;
+    }
+  }
 }

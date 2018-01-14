@@ -40,6 +40,12 @@ a {
   font-size: 1.2rem; }
 
 .landingLogo {
-  margin: 20px 0 50px 0; }
+  margin: 35px 0 50px 0; }
+
+@media screen and (max-width: 400px) {
+  .homeCapsule {
+    margin-top: 20px; }
+    .homeCapsule img {
+      width: 80%; } }
 
 /*# sourceMappingURL=login.css.map */
