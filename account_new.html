@@ -20,11 +20,11 @@
       </div>
       <img src="images/camera.png" alt="Adicionar Imagem">
       <p>Criar Conta</p>
-      <form>
-        <input type="text" placeholder="Nome">
-        <input type="email" placeholder="Endereço de e-mail">
-        <input type="password" placeholder="Senha">
-        <input type="submit" value="Criar Conta" class="newAccountBtn">
+      <form action="list.html" method="post" name="createUser">
+        <input type="text" placeholder="Nome" id="newName">
+        <input type="email" placeholder="Endereço de e-mail" id="newEmail">
+        <input type="password" placeholder="Senha" id="newPassword">
+        <input type="submit" value="Criar Conta" class="newAccountBtn" onclick="createUser()">
       </form>
     </div>
 
