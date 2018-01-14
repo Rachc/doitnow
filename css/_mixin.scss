@@ -9,3 +9,10 @@
   color: #fff;
   font-size: 1.2rem;
 }
+
+@mixin inputTexts{
+  border: 1px solid #9c9c9c;
+  padding: 10px;
+  color: $brown;
+  width: 100%;
+}
