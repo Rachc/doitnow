@@ -3,7 +3,42 @@
   src: url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+* {
+  margin: 0;
+  pading: 0; }
+
 body {
-  background-color: lavender; }
+  background-color: #fff;
+  font-family: 'RobotoRegular'; }
+
+.listCapsule {
+  width: 50%;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 100%; }
+
+.listHeader {
+  background-color: #564337;
+  color: #faf4c2;
+  height: 80px; }
+
+.listHeaderLogo {
+  display: flex;
+  justify-content: center; }
+  .listHeaderLogo img {
+    width: 150px;
+    background-color: pink; }
+
+.listHeaderInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.listUserInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .listUserInfo img {
+    margin-right: 5px; }
 
 /*# sourceMappingURL=lists.css.map */
