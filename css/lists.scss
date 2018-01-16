@@ -10,7 +10,7 @@
 
 body{
   background-color: #fff;
-  font-family: 'RobotoRegular';
+  font-family: 'ProDisplayRegular';
 }
 
 .listCapsule{
@@ -32,7 +32,6 @@ body{
 
   img{
     width: 150px;
-    background-color: pink;
   }
 }
 
@@ -50,4 +49,19 @@ body{
   img{
     margin-right: 5px;
   }
+}
+
+.listBody{
+  padding-top: 20px;
+}
+
+.listBodyHeader{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.listContent{
+  border: 1px solid $turquoise;
+  border-radius: 5px;
 }
