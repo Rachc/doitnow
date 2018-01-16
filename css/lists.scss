@@ -64,4 +64,57 @@ body{
 .listContent{
   border: 1px solid $turquoise;
   border-radius: 5px;
+
+  ul{
+    padding: 0;
+
+    li{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $turquoise;
+
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.listName{
+  display: flex;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.listActions{
+  display: flex;
+  padding: 10px 0;
+}
+
+.listIcon{
+  background-image: url('../images/icone_lista.png');
+  width: 20px;
+  height: 15px;
+  margin: 0 10px;
+}
+
+.editIcon{
+  background-image: url('../images/icone_editar.png');
+  width: 23px;
+  height: 20px;
+}
+
+.deleteListIcon{
+  background-image: url('../images/icone_deletar_lista.png');
+  width: 15px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.deleteTaskIcon{
+  background-image: url('../images/icone_deletar_tarefa-subtarefa.png');
+  width: 11px;
+  height: 15px;
+  margin: 0 10px;
 }
