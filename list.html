@@ -29,8 +29,8 @@
       <a href="list_new.html"><img src="images/botao_adicionar.png" alt="Adicionar Listas"></a>
     </div>
     <div class="listContent">
-      <ul>
-        <li>
+      <ul class="list">
+        <li class="listItem">
           <div class="listName">
             <div class="listIcon"></div>
             Lista 1
@@ -41,7 +41,7 @@
           </div>
         </li>
 
-        <li>
+        <li class="listItem">
           <div class="listName">
             <div class="listIcon"></div>
             Lista 2
@@ -50,9 +50,61 @@
             <div class="editIcon"></div>
             <div class="deleteListIcon"></div>
           </div>
+
+          <ul class="taskList">
+            <li><input type="text"></li>
+            <li>
+              <div class="task">
+                <div class="TaskName">
+                  <input type="checkbox">Tarefa 1
+                </div>
+                <div class="taskAction">
+                  <div class="deleteTaskIcon"></div>
+                </div>
+              </div>
+
+              <ul class="subtaskList">
+                <li>
+                  <div class="subtask">
+                    <div class="subtaskName">
+                      <input type="checkbox">Subtarefa 1
+                    </div>
+                    <div class="subtaskActon">
+                      <div class="deleteTaskIcon"></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="subtask">
+                    <div class="subtaskName">
+                      <input type="checkbox">Subtarefa 2
+                    </div>
+                    <div class="subtaskActon">
+                      <div class="deleteTaskIcon"></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="subtask">
+                    <div class="subtaskName">
+                      <input type="checkbox">Subtarefa 3
+                    </div>
+                    <div class="subtaskActon">
+                      <div class="deleteTaskIcon"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <input type="text">
+                </li>
+              </ul>
+            </li>
+
+          </ul>
         </li>
 
-        <li>
+        <li class="listItem">
           <div class="listName">
             <div class="listIcon"></div>
             Lista 3

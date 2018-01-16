@@ -133,12 +133,14 @@ body {
   border-radius: 5px; }
   .listContent ul {
     padding: 0; }
-    .listContent ul li {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #60b99a; }
-      .listContent ul li:last-child {
-        border-bottom: none; }
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #60b99a;
+  flex-wrap: wrap; }
+  .listItem:last-child {
+    border-bottom: none; }
 
 .listName {
   display: flex;
@@ -167,10 +169,30 @@ body {
   height: 20px;
   margin: 0 10px; }
 
+.taskList {
+  width: 90%;
+  margin-left: 40px;
+  list-style-type: none; }
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #60b99a;
+  margin-bottom: 10px; }
+
 .deleteTaskIcon {
   background-image: url("../images/icone_deletar_tarefa-subtarefa.png");
   width: 11px;
   height: 15px;
   margin: 0 10px; }
+
+.subtaskList {
+  list-style-type: none;
+  font-size: 0.9rem;
+  margin-left: 10px; }
+
+.subtask {
+  display: flex;
+  justify-content: space-between; }
 
 /*# sourceMappingURL=lists.css.map */
