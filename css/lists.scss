@@ -114,9 +114,24 @@ body{
 }
 
 .taskList{
-  width: 90%;
+  width: 100%;
   margin-left: 40px;
   list-style-type: none;
+}
+
+.todoSubmit{
+  border: 1px solid $lightGray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 5px 40px 5px 0;
+  border-radius: 5px;
+
+  input[type="text"]{
+    border: none;
+    width: 100%;
+  }
 }
 
 .task{
@@ -124,6 +139,7 @@ body{
   justify-content: space-between;
   border-bottom: 1px solid $turquoise;
   margin-bottom: 10px;
+  padding-right: 40px;
 }
 
 .deleteTaskIcon{
@@ -142,4 +158,5 @@ body{
 .subtask{
   display: flex;
   justify-content: space-between;
+  padding: 0 40px 5px 0;
 }
