@@ -59,6 +59,10 @@ body{
   display: flex;
   justify-content: space-between;
   margin: 5px;
+
+  h3{
+    font-weight: normal;
+  }
 }
 
 .listContent{
@@ -67,6 +71,10 @@ body{
 
   ul{
     padding: 0;
+
+    li{
+      list-style: none;
+    }
   }
 }
 
@@ -159,4 +167,29 @@ body{
   display: flex;
   justify-content: space-between;
   padding: 0 40px 5px 0;
+}
+
+.listSubmitBtn{
+  @include buttonStyle($orange, #fff);
+  margin: 0 auto;
+}
+
+.listCreation{
+  border: none;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.newListSubmit{
+  margin-right: 0;
+}
+
+@media screen and (max-width: 700px){
+  .listCapsule{
+    width: 90%;
+  }
 }

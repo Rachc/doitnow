@@ -127,12 +127,16 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 5px; }
+  .listBodyHeader h3 {
+    font-weight: normal; }
 
 .listContent {
   border: 1px solid #60b99a;
   border-radius: 5px; }
   .listContent ul {
     padding: 0; }
+    .listContent ul li {
+      list-style: none; }
 
 .listItem {
   display: flex;
@@ -208,5 +212,32 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 40px 5px 0; }
+
+.listSubmitBtn {
+  background-color: #ee7733;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+  margin-top: 3px;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0 auto; }
+
+.listCreation {
+  border: none; }
+  .listCreation form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.newListSubmit {
+  margin-right: 0; }
+
+@media screen and (max-width: 700px) {
+  .listCapsule {
+    width: 90%; } }
 
 /*# sourceMappingURL=lists.css.map */

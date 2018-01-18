@@ -5,7 +5,11 @@ $(document).ready(function() {
       if (task === ''){
         $(this).parent().css("border", "1px solid red");
       } else {
-        $("#taskList").append("<li><div class='task'><div class='TaskName'><input type='checkbox'>" + task + "</div><div class='taskAction'><div class='deleteTaskIcon'></div></div></div></li><ul class='subtaskList'><li></li></ul>");
+        if($(this).hasClass('newListTaskInput')){
+          $("#taskList").append("<li><div class='task'><div class='TaskName'><input type='checkbox'>" + task + "</div></div></li>");
+        } else {
+          $("#taskList").append("<li><div class='task'><div class='TaskName'><input type='checkbox'>" + task + "</div><div class='taskAction'><div class='deleteTaskIcon'></div></div></div></li>");
+        }
         $(this).val("");
       }
     }
@@ -22,4 +26,12 @@ $(document).ready(function() {
       }
     }
   });
+
+  $('#newListForm').on('keyup keypress', function(e) {
+  var keyCode = e.keyCode || e.which;
+  if (keyCode === 13) {
+    e.preventDefault();
+    return false;
+  }
+});
 });
