@@ -28,10 +28,21 @@ $(document).ready(function() {
   });
 
   $('#newListForm').on('keyup keypress', function(e) {
-  var keyCode = e.keyCode || e.which;
-  if (keyCode === 13) {
-    e.preventDefault();
-    return false;
-  }
-});
+    let keyCode = e.keyCode || e.which;
+    if (keyCode === 13) {
+      e.preventDefault();
+      return false;
+    }
+  });
+
+  $('.deleteTaskIcon').on('click', function() {
+    let list = $(this).parents('li').first();
+    list.hide();
+  });
+
+  $('.deleteListIcon').on('click', function() {
+    let list = $(this).parents('li').first();
+    list.hide();
+  });
+
 });
