@@ -45,4 +45,15 @@ $(document).ready(function() {
     list.hide();
   });
 
+  $('.subtaskName > input[type=checkbox]').on('change', function() {
+    let subtask = $('.subtaskName');
+    let checked_subtask = subtask.find('input[type=checkbox]:checked').length;
+    let task_checkbox = $('.TaskName').find('input[type=checkbox]');
+
+    if (subtask.length === checked_subtask) {
+      task_checkbox.prop('checked', true);
+    } else {
+      task_checkbox.prop('checked', false);
+    }
+  });
 });
