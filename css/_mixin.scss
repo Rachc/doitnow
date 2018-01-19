@@ -1,0 +1,19 @@
+@mixin buttonStyle($bgColor, $fontColor){
+  background-color: $bgColor;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+  margin-top: 3px;
+  color: $fontColor;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+@mixin inputTexts{
+  border: 1px solid #9c9c9c;
+  padding: 10px;
+  color: $brown;
+  width: 100%;
+}

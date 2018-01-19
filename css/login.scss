@@ -1,0 +1,112 @@
+@charset 'utf-8';
+@import 'font';
+@import 'variables';
+@import 'mixin';
+
+body{
+  background-image: url('../images/pattern.png');
+  font-family: 'ProDisplayRegular';
+  background-color: $yellow;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.homeCapsule{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.newAccountBtn{
+  @include buttonStyle($orange, #fff);
+}
+
+.loginBtn{
+  @include buttonStyle($green, $brown);
+}
+
+.landingLogo{
+  margin: 35px 0 50px 0;
+}
+
+.accountCapsule{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .landingLogo{
+    max-width: 300px;
+    margin: 35px 0 20px 0;
+  }
+}
+
+.accountContainer{
+  background-color: $yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  min-width: 400px;
+  padding: 20px 20px 100px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px $gray;
+
+  p{
+    font-size: 1.3rem;
+    margin: 5px 0 30px;
+    color: $brown;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+
+    input[type="text"]{
+      @include inputTexts;
+      border-radius: 5px 5px 0 0;
+    }
+
+    input[type="email"]{
+      @include inputTexts;
+      border-top: none;
+      border-bottom: none;
+    }
+
+    input[type="password"]{
+      @include inputTexts;
+      border-radius: 0 0 5px 5px;
+    }
+
+    input[type="submit"]{
+      margin-top: 30px;
+    }
+
+    p{
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.accountBack{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 400px){
+  .homeCapsule{
+    margin-top: 20px;
+
+    img{
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/lists.css">
+
+  <script type="text/javascript" src="scripts/lib/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+  <title>Do it Now</title>
+</head>
+<body>
+  <header class="listHeader">
+    <div class="listCapsule listHeaderInfo">
+      <div class="listHeaderLogo">
+        <img src="images/marca_mini_header.png" alt="Do It Now">
+      </div>
+      <div class="listUserInfo">
+        <img src="images/avatar.png" alt="">
+        <p>Usuário 1</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="listBody listCapsule">
+    <div class="listBodyHeader">
+      <h3>Criar Listas</h3>
+    </div>
+    <div class="listContent listCreation">
+      <form action="list.html" method="post" name="Login" id="newListForm">
+        <ul class="taskList" id="taskList">
+          <li>
+            <div class="todoSubmit newListSubmit" id="listSubmit">
+              <input type="text" id="listInput" placeholder="Digite o nome da Lista" required>
+            </div>
+          </li>
+          <li>
+            <div class="todoSubmit newListSubmit" id="taskSubmit">
+              <input type="text" id="taskInput" class="newListTaskInput" placeholder="Adicionar tarefa">
+              <img src="images/botao_adicionar.png" alt="Adicionar Tarefa">
+            </div>
+          </li>
+          <li>
+            <div class="task">
+              <div class="TaskName">
+                <input type="checkbox">Tarefa 1
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="task">
+              <div class="TaskName">
+                <input type="checkbox">Tarefa 2
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="task">
+              <div class="TaskName">
+                <input type="checkbox">Tarefa 3
+              </div>
+            </div>
+          </li>
+        </ul>
+        <input type="submit" value="Criar Lista" class="listSubmitBtn">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

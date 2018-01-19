@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'ProDisplayBlack';
+  src: url("../fonts/SFProDisplay-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayBlackItalic';
+  src: url("../fonts/SFProDisplay-BlackItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayBold';
+  src: url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayBoldItalic';
+  src: url("../fonts/SFProDisplay-BoldItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayHeavy';
+  src: url("../fonts/SFProDisplay-HeavyItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayLight';
+  src: url("../fonts/SFProDisplay-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayLightItalic';
+  src: url("../fonts/SFProDisplay-LightItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayMedium';
+  src: url("../fonts/SFProDisplay-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayMediumItalic';
+  src: url("../fonts/SFProDisplay-MediumItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayRegular';
+  src: url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayRegularItalic';
+  src: url("../fonts/SFProDisplay-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplaySemibold';
+  src: url("../fonts/SFProDisplay-Semibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplaySemiboldItalic';
+  src: url("../fonts/SFProDisplay-SemiboldItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayThin';
+  src: url("../fonts/SFProDisplay-Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayThinItalic';
+  src: url("../fonts/SFProDisplay-ThinItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayUltralight';
+  src: url("../fonts/SFProDisplay-Ultralight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProDisplayUltralightItalic';
+  src: url("../fonts/SFProDisplay-UltralightItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff;
+  font-family: 'ProDisplayRegular'; }
+
+.listCapsule {
+  width: 50%;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 100%; }
+
+.listHeader {
+  background-color: #564337;
+  color: #faf4c2;
+  height: 80px; }
+
+.listHeaderLogo {
+  display: flex;
+  justify-content: center; }
+  .listHeaderLogo img {
+    width: 150px; }
+
+.listHeaderInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.listUserInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .listUserInfo img {
+    margin-right: 5px; }
+
+.listBody {
+  padding-top: 20px; }
+
+.listBodyHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px; }
+  .listBodyHeader h3 {
+    font-weight: normal; }
+
+.listContent {
+  border: 1px solid #60b99a;
+  border-radius: 5px; }
+  .listContent ul {
+    padding: 0; }
+    .listContent ul li {
+      list-style: none; }
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #60b99a;
+  flex-wrap: wrap; }
+  .listItem:last-child {
+    border-bottom: none; }
+
+.listName {
+  display: flex;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  align-items: center; }
+
+.listActions {
+  display: flex;
+  padding: 10px 0; }
+
+.listIcon {
+  background-image: url("../images/icone_lista.png");
+  width: 20px;
+  height: 15px;
+  margin: 0 10px; }
+
+.editIcon {
+  background-image: url("../images/icone_editar.png");
+  width: 23px;
+  height: 20px; }
+
+.deleteListIcon {
+  background-image: url("../images/icone_deletar_lista.png");
+  width: 15px;
+  height: 20px;
+  margin: 0 10px; }
+
+.taskList {
+  width: 100%;
+  margin-left: 40px;
+  list-style-type: none; }
+
+.todoSubmit {
+  border: 1px solid #B3B3B3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 5px 40px 5px 0;
+  border-radius: 5px; }
+  .todoSubmit input[type="text"] {
+    border: none;
+    width: 100%; }
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #60b99a;
+  margin-bottom: 10px;
+  padding-right: 40px; }
+
+.deleteTaskIcon {
+  background-image: url("../images/icone_deletar_tarefa-subtarefa.png");
+  width: 11px;
+  height: 15px;
+  margin: 0 10px; }
+
+.subtaskList {
+  list-style-type: none;
+  font-size: 0.9rem;
+  margin-left: 10px; }
+
+.subtask {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px 5px 0; }
+
+.listSubmitBtn {
+  background-color: #ee7733;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+  margin-top: 3px;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0 auto; }
+
+.listCreation {
+  border: none; }
+  .listCreation form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.newListSubmit {
+  margin-right: 0; }
+
+@media screen and (max-width: 700px) {
+  .listCapsule {
+    width: 90%; } }
+
+/*# sourceMappingURL=lists.css.map */

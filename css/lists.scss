@@ -1,0 +1,195 @@
+@charset 'utf-8';
+@import 'font';
+@import 'variables';
+@import 'mixin';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #fff;
+  font-family: 'ProDisplayRegular';
+}
+
+.listCapsule{
+  width: 50%;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.listHeader{
+  background-color: $brown;
+  color:$yellow;
+  height: 80px;
+}
+
+.listHeaderLogo{
+  display: flex;
+  justify-content: center;
+
+  img{
+    width: 150px;
+  }
+}
+
+.listHeaderInfo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listUserInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img{
+    margin-right: 5px;
+  }
+}
+
+.listBody{
+  padding-top: 20px;
+}
+
+.listBodyHeader{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+
+  h3{
+    font-weight: normal;
+  }
+}
+
+.listContent{
+  border: 1px solid $turquoise;
+  border-radius: 5px;
+
+  ul{
+    padding: 0;
+
+    li{
+      list-style: none;
+    }
+  }
+}
+
+.listItem{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $turquoise;
+  flex-wrap: wrap;
+
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+.listName{
+  display: flex;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.listActions{
+  display: flex;
+  padding: 10px 0;
+}
+
+.listIcon{
+  background-image: url('../images/icone_lista.png');
+  width: 20px;
+  height: 15px;
+  margin: 0 10px;
+}
+
+.editIcon{
+  background-image: url('../images/icone_editar.png');
+  width: 23px;
+  height: 20px;
+}
+
+.deleteListIcon{
+  background-image: url('../images/icone_deletar_lista.png');
+  width: 15px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.taskList{
+  width: 100%;
+  margin-left: 40px;
+  list-style-type: none;
+}
+
+.todoSubmit{
+  border: 1px solid $lightGray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 5px 40px 5px 0;
+  border-radius: 5px;
+
+  input[type="text"]{
+    border: none;
+    width: 100%;
+  }
+}
+
+.task{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $turquoise;
+  margin-bottom: 10px;
+  padding-right: 40px;
+}
+
+.deleteTaskIcon{
+  background-image: url('../images/icone_deletar_tarefa-subtarefa.png');
+  width: 11px;
+  height: 15px;
+  margin: 0 10px;
+}
+
+.subtaskList{
+  list-style-type: none;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.subtask{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px 5px 0;
+}
+
+.listSubmitBtn{
+  @include buttonStyle($orange, #fff);
+  margin: 0 auto;
+}
+
+.listCreation{
+  border: none;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.newListSubmit{
+  margin-right: 0;
+}
+
+@media screen and (max-width: 700px){
+  .listCapsule{
+    width: 90%;
+  }
+}
