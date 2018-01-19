@@ -1,11 +1,13 @@
 $(document).ready(function() {
-  $('#taskInput').keypress(function(event){
+
+  //Add new task
+  $("#taskInput").keypress(function(event){
     if (event.which === 13){
       let task = $(this).val();
       if (task === ''){
         $(this).parent().css("border", "1px solid red");
       } else {
-        if($(this).hasClass('newListTaskInput')){
+        if($(this).hasClass("newListTaskInput")){
           $("#taskList").append("<li><div class='task'><div class='TaskName'><input type='checkbox'>" + task + "</div></div></li>");
         } else {
           $("#taskList").append("<li><div class='task'><div class='TaskName'><input type='checkbox'>" + task + "</div><div class='taskAction'><div class='deleteTaskIcon'></div></div></div></li>");
@@ -15,7 +17,8 @@ $(document).ready(function() {
     }
   });
 
-  $('#subTaskInput').keypress(function(event){
+  //add new subtask
+  $("#subTaskInput").keypress(function(event){
     if (event.which === 13){
       let task = $(this).val();
       if (task === ''){
@@ -27,7 +30,8 @@ $(document).ready(function() {
     }
   });
 
-  $('#newListForm').on('keyup keypress', function(e) {
+  //prevent list to be submited with enter key
+  $("#newListForm").on("keyup keypress", function(e) {
     let keyCode = e.keyCode || e.which;
     if (keyCode === 13) {
       e.preventDefault();
@@ -35,16 +39,19 @@ $(document).ready(function() {
     }
   });
 
+  //delete a task
   $('.deleteTaskIcon').on('click', function() {
     let list = $(this).parents('li').first();
     list.hide();
   });
 
+  //delete a list
   $('.deleteListIcon').on('click', function() {
     let list = $(this).parents('li').first();
     list.hide();
   });
 
+  //checked task if all the subtask are completed.
   $('.subtaskName > input[type=checkbox]').on('change', function() {
     let subtask = $('.subtaskName');
     let checked_subtask = subtask.find('input[type=checkbox]:checked').length;
@@ -56,4 +63,5 @@ $(document).ready(function() {
       task_checkbox.prop('checked', false);
     }
   });
+
 });
