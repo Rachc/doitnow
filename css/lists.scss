@@ -13,6 +13,10 @@ body{
   font-family: 'ProDisplayRegular';
 }
 
+input[type="checkbox"]{
+  margin-right: 5px;
+}
+
 .listCapsule{
   width: 50%;
   max-width: 700px;
@@ -29,10 +33,6 @@ body{
 .listHeaderLogo{
   display: flex;
   justify-content: center;
-
-  img{
-    width: 150px;
-  }
 }
 
 .listHeaderInfo{
@@ -125,6 +125,14 @@ body{
   width: 100%;
   margin-left: 40px;
   list-style-type: none;
+
+  li{
+    padding-bottom: 5px;
+  }
+}
+
+.listNewPage{
+  margin-left: 0px;
 }
 
 .todoSubmit{
@@ -133,12 +141,13 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  margin: 5px 40px 5px 0;
+  margin-right: 40px;
   border-radius: 5px;
 
   input[type="text"]{
     border: none;
     width: 100%;
+    margin-left: 5px;
   }
 }
 
@@ -146,8 +155,9 @@ body{
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid $turquoise;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   padding-right: 40px;
+  padding-bottom: 3px;
 }
 
 .deleteTaskIcon{
@@ -166,12 +176,13 @@ body{
 .subtask{
   display: flex;
   justify-content: space-between;
-  padding: 0 40px 5px 0;
+  padding: 0 40px 0 0;
 }
 
 .listSubmitBtn{
   @include buttonStyle($orange, #fff);
-  margin: 0 auto;
+  margin: 20px auto;
+  width: 180px;
 }
 
 .listCreation{
@@ -186,6 +197,11 @@ body{
 
 .newListSubmit{
   margin-right: 0;
+  height: 20px;
+}
+
+.inputMarginBottom{
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 700px){

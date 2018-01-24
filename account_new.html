@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/login.css">
 
-  <script type="text/javascript" src="scripts/lib/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="scripts/main.js"></script>
-  <title>Do it Now</title>
-</head>
-<body>
-  <div class="accountCapsule">
-    <img src="images/marca_mini_app.png" alt="Do it now" class="landingLogo">
+    <title>Do it Now</title>
+  </head>
+  <body>
+    <div class="accountCapsule">
+      <img src="images/marca_mini_app.png" alt="Do it now" class="landingLogo">
 
-    <div class="accountContainer">
-      <div class="accountBack">
-        <a href="index.html"><img src="images/seta.png" alt="Voltar"></a>
+      <div class="accountContainer">
+        <div class="accountBack">
+          <a href="index.html"><img src="images/seta.png" alt="Voltar"></a>
+        </div>
+        <img src="images/camera.png" alt="Adicionar Imagem">
+        <p>Criar Conta</p>
+        <form action="list.html" method="post">
+          <input type="text" placeholder="Nome" id="newName" required>
+          <input type="email" placeholder="Endereço de e-mail" id="newEmail" required>
+          <input type="password" placeholder="Senha" id="newPassword" required>
+          <input type="submit" value="Criar Conta" class="newAccountBtn">
+        </form>
       </div>
-      <img src="images/camera.png" alt="Adicionar Imagem">
-      <p>Criar Conta</p>
-      <form action="list.html" method="post">
-        <input type="text" placeholder="Nome" id="newName" required>
-        <input type="email" placeholder="Endereço de e-mail" id="newEmail" required>
-        <input type="password" placeholder="Senha" id="newPassword" required>
-        <input type="submit" value="Criar Conta" class="newAccountBtn">
-      </form>
-    </div>
 
-  </div>
-</body>
+    </div>
+    <script type="text/javascript" src="scripts/lib/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
 </html>

@@ -91,6 +91,9 @@ body {
   background-color: #fff;
   font-family: 'ProDisplayRegular'; }
 
+input[type="checkbox"] {
+  margin-right: 5px; }
+
 .listCapsule {
   width: 50%;
   max-width: 700px;
@@ -105,8 +108,6 @@ body {
 .listHeaderLogo {
   display: flex;
   justify-content: center; }
-  .listHeaderLogo img {
-    width: 150px; }
 
 .listHeaderInfo {
   display: flex;
@@ -177,6 +178,11 @@ body {
   width: 100%;
   margin-left: 40px;
   list-style-type: none; }
+  .taskList li {
+    padding-bottom: 5px; }
+
+.listNewPage {
+  margin-left: 0px; }
 
 .todoSubmit {
   border: 1px solid #B3B3B3;
@@ -184,18 +190,20 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  margin: 5px 40px 5px 0;
+  margin-right: 40px;
   border-radius: 5px; }
   .todoSubmit input[type="text"] {
     border: none;
-    width: 100%; }
+    width: 100%;
+    margin-left: 5px; }
 
 .task {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #60b99a;
-  margin-bottom: 10px;
-  padding-right: 40px; }
+  margin-bottom: 3px;
+  padding-right: 40px;
+  padding-bottom: 3px; }
 
 .deleteTaskIcon {
   background-image: url("../images/icone_deletar_tarefa-subtarefa.png");
@@ -211,7 +219,7 @@ body {
 .subtask {
   display: flex;
   justify-content: space-between;
-  padding: 0 40px 5px 0; }
+  padding: 0 40px 0 0; }
 
 .listSubmitBtn {
   background-color: #ee7733;
@@ -224,7 +232,8 @@ body {
   color: #fff;
   font-size: 1.2rem;
   text-transform: capitalize;
-  margin: 0 auto; }
+  margin: 20px auto;
+  width: 180px; }
 
 .listCreation {
   border: none; }
@@ -234,7 +243,11 @@ body {
     align-items: center; }
 
 .newListSubmit {
-  margin-right: 0; }
+  margin-right: 0;
+  height: 20px; }
+
+.inputMarginBottom {
+  margin-bottom: 5px; }
 
 @media screen and (max-width: 700px) {
   .listCapsule {

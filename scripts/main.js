@@ -1,34 +1,50 @@
 $(document).ready(function() {
 
+  let taskSubmit = function(){
+    let target = $("#taskInput");
+    let task = target.val();
+    if (task === ''){
+      target.parent().css("border", "1px solid red");
+    }
+    else {
+      if(target.hasClass("newListTaskInput")){
+        $("#taskList").append("<li><div class='task'><div class='TaskName'><input type='checkbox'>" + task + "</div></div></li>");
+      }
+      else {
+        $("#taskList").append("<li><div class='task'><div class='TaskName'><input type='checkbox'>" + task + "</div><div class='taskAction'><div class='deleteTaskIcon'></div></div></div></li>");
+      }
+      target.val("");
+    }
+  }
+
+  let subTaskSubmit = function(){
+    let target = $("#subTaskInput");
+    let task = target.val();
+    if (task === ''){
+      target.parent().css("border", "1px solid red");
+    } else {
+      $("#subtaskList").prepend("<li><div class='subtask'><div class='subtaskName'><input type='checkbox'>" + task + "</div><div class='subtaskAction'><div class='deleteTaskIcon'></div></div></div></li>");
+      target.val("");
+    }
+  }
+
   //Add new task
   $("#taskInput").keypress(function(event){
-    if (event.which === 13){
-      let task = $(this).val();
-      if (task === ''){
-        $(this).parent().css("border", "1px solid red");
-      } else {
-        if($(this).hasClass("newListTaskInput")){
-          $("#taskList").append("<li><div class='task'><div class='TaskName'><input type='checkbox'>" + task + "</div></div></li>");
-        } else {
-          $("#taskList").append("<li><div class='task'><div class='TaskName'><input type='checkbox'>" + task + "</div><div class='taskAction'><div class='deleteTaskIcon'></div></div></div></li>");
-        }
-        $(this).val("");
-      }
+    if (event.which === 13 ){
+      taskSubmit();
     }
   });
+
+  $("#taskSubmitButton").on('click', taskSubmit);
 
   //add new subtask
   $("#subTaskInput").keypress(function(event){
     if (event.which === 13){
-      let task = $(this).val();
-      if (task === ''){
-        $(this).parent().css("border", "1px solid red");
-      } else {
-        $("#subtaskList").prepend("<li><div class='subtask'><div class='subtaskName'><input type='checkbox'>" + task + "</div><div class='subtaskAction'><div class='deleteTaskIcon'></div></div></div></li>");
-        $(this).val("");
-      }
+      subTaskSubmit();
     }
   });
+
+  $("#subtTaskSubmitButton").on('click', subTaskSubmit);
 
   //prevent list to be submited with enter key
   $("#newListForm").on("keyup keypress", function(e) {
@@ -41,13 +57,15 @@ $(document).ready(function() {
 
   //delete a task
   $('.deleteTaskIcon').on('click', function() {
-    let list = $(this).parents('li').first();
+    let target = $(this);
+    let list = target.parents('li').first();
     list.hide();
   });
 
   //delete a list
   $('.deleteListIcon').on('click', function() {
-    let list = $(this).parents('li').first();
+    let target = $(this);
+    let list = target.parents('li').first();
     list.hide();
   });
 
@@ -63,5 +81,9 @@ $(document).ready(function() {
       task_checkbox.prop('checked', false);
     }
   });
+
+
+
+
 
 });

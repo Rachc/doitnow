@@ -1,130 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="css/lists.css">
+    <link rel="stylesheet" href="css/lists.css">
 
-  <script type="text/javascript" src="scripts/lib/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="scripts/main.js"></script>
-  <title>Do it Now</title>
-</head>
-<body>
-  <header class="listHeader">
-    <div class="listCapsule listHeaderInfo">
-      <div class="listHeaderLogo">
-        <img src="images/marca_mini_header.png" alt="Do It Now">
+
+    <title>Do it Now</title>
+  </head>
+  <body>
+    <header class="listHeader">
+      <div class="listCapsule listHeaderInfo">
+        <div class="listHeaderLogo">
+          <img src="images/marca_mini_header.png" alt="Do It Now">
+        </div>
+        <div class="listUserInfo">
+          <img src="images/avatar.png" alt="">
+          <p>Usuário 1</p>
+        </div>
       </div>
-      <div class="listUserInfo">
-        <img src="images/avatar.png" alt="">
-        <p>Usuário 1</p>
+    </header>
+
+    <div class="listBody listCapsule">
+      <div class="listBodyHeader">
+        <h3>Listas</h3>
+        <a href="list_new.html"><img src="images/botao_adicionar.png" alt="Adicionar Listas"></a>
+      </div>
+      <div class="listContent">
+        <ul class="list">
+          <li class="listItem">
+            <div class="listName">
+              <div class="listIcon"></div>
+              Lista 1
+            </div>
+            <div class="listActions">
+              <div class="editIcon"></div>
+              <div class="deleteListIcon"></div>
+            </div>
+          </li>
+
+          <li class="listItem">
+            <div class="listName">
+              <div class="listIcon"></div>
+              Lista 2
+            </div>
+            <div class="listActions">
+              <div class="editIcon"></div>
+              <div class="deleteListIcon"></div>
+            </div>
+
+            <ul class="taskList" id="taskList">
+              <li>
+                <div class="todoSubmit" id="taskSubmit">
+                  <input type="text" id="taskInput" placeholder="Adicionar tarefa">
+                  <img src="images/botao_adicionar.png" alt="Adicionar Tarefa"  id="taskSubmitButton">
+                </div>
+              </li>
+              <li>
+                <div class="task">
+                  <div class="TaskName">
+                    <input type="checkbox">Tarefa 1
+                  </div>
+                  <div class="taskAction">
+                    <div class="deleteTaskIcon"></div>
+                  </div>
+                </div>
+
+                <ul class="subtaskList" id="subtaskList">
+                  <li>
+                    <div class="subtask">
+                      <div class="subtaskName">
+                        <input type="checkbox">Subtarefa 1
+                      </div>
+                      <div class="subtaskAction">
+                        <div class="deleteTaskIcon"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="subtask">
+                      <div class="subtaskName">
+                        <input type="checkbox">Subtarefa 2
+                      </div>
+                      <div class="subtaskAction">
+                        <div class="deleteTaskIcon"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="subtask">
+                      <div class="subtaskName">
+                        <input type="checkbox">Subtarefa 3
+                      </div>
+                      <div class="subtaskAction">
+                        <div class="deleteTaskIcon"></div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="todoSubmit" id="subtaskSubmit">
+                      <input type="text" id="subTaskInput" placeholder="Adicionar Subtarefa">
+                      <img src="images/botao_adicionar.png" alt="Adicionar Subtarefa" id="subtTaskSubmitButton">
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="listItem">
+            <div class="listName">
+              <div class="listIcon"></div>
+              Lista 3
+            </div>
+            <div class="listActions">
+              <div class="editIcon"></div>
+              <div class="deleteListIcon"></div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
-  </header>
 
-  <div class="listBody listCapsule">
-    <div class="listBodyHeader">
-      <h3>Listas</h3>
-      <a href="list_new.html"><img src="images/botao_adicionar.png" alt="Adicionar Listas"></a>
-    </div>
-    <div class="listContent">
-      <ul class="list">
-        <li class="listItem">
-          <div class="listName">
-            <div class="listIcon"></div>
-            Lista 1
-          </div>
-          <div class="listActions">
-            <div class="editIcon"></div>
-            <div class="deleteListIcon"></div>
-          </div>
-        </li>
-
-        <li class="listItem">
-          <div class="listName">
-            <div class="listIcon"></div>
-            Lista 2
-          </div>
-          <div class="listActions">
-            <div class="editIcon"></div>
-            <div class="deleteListIcon"></div>
-          </div>
-
-          <ul class="taskList" id="taskList">
-            <li>
-              <div class="todoSubmit" id="taskSubmit">
-                <input type="text" id="taskInput" placeholder="Adicionar tarefa">
-                <img src="images/botao_adicionar.png" alt="Adicionar Tarefa">
-              </div>
-            </li>
-            <li>
-              <div class="task">
-                <div class="TaskName">
-                  <input type="checkbox">Tarefa 1
-                </div>
-                <div class="taskAction">
-                  <div class="deleteTaskIcon"></div>
-                </div>
-              </div>
-
-              <ul class="subtaskList" id="subtaskList">
-                <li>
-                  <div class="subtask">
-                    <div class="subtaskName">
-                      <input type="checkbox">Subtarefa 1
-                    </div>
-                    <div class="subtaskAction">
-                      <div class="deleteTaskIcon"></div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="subtask">
-                    <div class="subtaskName">
-                      <input type="checkbox">Subtarefa 2
-                    </div>
-                    <div class="subtaskAction">
-                      <div class="deleteTaskIcon"></div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="subtask">
-                    <div class="subtaskName">
-                      <input type="checkbox">Subtarefa 3
-                    </div>
-                    <div class="subtaskAction">
-                      <div class="deleteTaskIcon"></div>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="todoSubmit" id="subtaskSubmit">
-                    <input type="text" id="subTaskInput" placeholder="Adicionar Subtarefa">
-                    <img src="images/botao_adicionar.png" alt="Adicionar Subtarefa">
-                  </div>
-                </li>
-              </ul>
-            </li>
-
-          </ul>
-        </li>
-
-        <li class="listItem">
-          <div class="listName">
-            <div class="listIcon"></div>
-            Lista 3
-          </div>
-          <div class="listActions">
-            <div class="editIcon"></div>
-            <div class="deleteListIcon"></div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</body>
+    <script type="text/javascript" src="scripts/lib/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
 </html>

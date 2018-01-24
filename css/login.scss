@@ -40,7 +40,6 @@ a{
   align-items: center;
 
   .landingLogo{
-    max-width: 300px;
     margin: 35px 0 20px 0;
   }
 }
@@ -51,7 +50,7 @@ a{
   flex-direction: column;
   align-items: center;
   width: 50%;
-  min-width: 400px;
+  min-width: 300px;
   padding: 20px 20px 100px;
   box-sizing: border-box;
   border-radius: 5px;
@@ -77,12 +76,12 @@ a{
     input[type="email"]{
       @include inputTexts;
       border-top: none;
-      border-bottom: none;
     }
 
     input[type="password"]{
       @include inputTexts;
       border-radius: 0 0 5px 5px;
+      border-top: none;
     }
 
     input[type="submit"]{
@@ -100,4 +99,10 @@ a{
   justify-content: flex-start;
   width: 100%;
   padding: 10px;
+}
+
+@media screen and (max-width: 400px){
+  .accountContainer{
+    width: 100%;
+  }
 }
