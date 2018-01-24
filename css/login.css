@@ -120,7 +120,8 @@ a {
   margin-top: 3px;
   color: #564337;
   font-size: 1.2rem;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  margin-top: 10px; }
 
 .landingLogo {
   margin: 35px 0 50px 0; }
@@ -182,11 +183,5 @@ a {
   justify-content: flex-start;
   width: 100%;
   padding: 10px; }
-
-@media screen and (max-width: 400px) {
-  .homeCapsule {
-    margin-top: 20px; }
-    .homeCapsule img {
-      width: 80%; } }
 
 /*# sourceMappingURL=login.css.map */

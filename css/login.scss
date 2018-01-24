@@ -27,6 +27,7 @@ a{
 
 .loginBtn{
   @include buttonStyle($green, $brown);
+  margin-top: 10px;
 }
 
 .landingLogo{
@@ -99,14 +100,4 @@ a{
   justify-content: flex-start;
   width: 100%;
   padding: 10px;
-}
-
-@media screen and (max-width: 400px){
-  .homeCapsule{
-    margin-top: 20px;
-
-    img{
-      width: 80%;
-    }
-  }
 }
